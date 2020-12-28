@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 
 void dectobin(int);
 void bintodec(int);
