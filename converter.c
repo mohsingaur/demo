@@ -23,3 +23,24 @@ int main() {
     }
     return 0;
 }
+void dectobin(int n){
+    int i, r, k=0, b=0, j;
+    for(i=n; i>0; i/=2){
+        r = i%2;
+        j=r*pow(10,k);
+        b+=j;
+        k++;
+    }
+    printf("Binary No: %u",b);
+}
+
+void bintodec(int n){
+    int i, b, k=0, d=0, j;
+    for(i=n; i>0; i/=10){
+        b= i%10;
+        j=b*pow(2,k);
+        d+=j;
+        k++;
+    }
+    printf("Decimal No: %u",d);
+}
