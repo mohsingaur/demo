@@ -1,0 +1,22 @@
+@if(isTaskModalOpen){
+    <!-- <app-addtask (cancel)="closeTaskModal($event)" (newFact)="addNewTask($event)"></app-addtask> -->
+     <app-addtask [userId]="userId" (cancel)="closeTaskModal($event)"></app-addtask>
+}
+
+<div class="header">
+    <p class="flt-lt">Facts By: {{name}}</p>
+    <p class="flt-rt">
+        <button class="btn" (click)="openTaskModal()">Add Fact</button>
+    </p>
+</div>
+
+<article>
+    @for(task of userTasks; track task.id){
+    <!-- <app-task [task]="task" (complete)="completeTask($event)"></app-task> -->
+     <app-task [task]="task"></app-task>
+    }
+</article>
+
+
+
+

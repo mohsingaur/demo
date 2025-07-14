@@ -1,0 +1,290 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+    height: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+    background-color: rgb(27, 18, 49);
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(13, 46, 75);
+    color: #fff;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 91%;
+    margin: 10px auto;
+    justify-content: space-around;
+}
+
+main .menu {
+    width: 29%;
+    color: #fff;
+    /* border: 1px solid #fff; */
+}
+
+main .content {
+    width: 69%;
+    /* border: 1px solid #fff; */
+}
+
+
+.active {
+    background-color: rgb(11, 86, 152) !important;
+}
+
+.menu .list-item {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(8, 60, 106);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu .list-item:first-child{
+    margin-bottom: 10px;
+}
+
+.menu .list-item .img {
+    height: 30px;
+    width: 30px;
+    margin: 5px 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #fff;
+}
+
+.menu .list-item:hover {
+    background-color: rgb(11, 86, 152);
+    cursor: context-menu;
+}
+
+.content .header{
+    background-color: rgb(8, 60, 106);
+    width: 100%;
+    padding: 10px;
+    float: left;
+}
+
+.content .header::after{
+    clear: both;
+    display: block;
+}
+
+.flt-rt{
+    float: right
+}
+.flt-lt{
+    float: left;
+}
+
+.btn{
+    padding: 2px 8px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(0, 110, 255);
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    font-size: 12px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    transition: all 0.5s ease-in-out;
+}
+.btn:hover{
+    box-shadow: 1.5px 1.5px 7px rgba(0, 0, 0, 1);
+}
+
+.content article{
+    margin: 41px 0px 10px 0px;
+    max-height: 70dvh;
+    overflow-y: auto;
+}
+
+article .card{
+    margin: 10px 0;
+    padding: 10px;
+    background-color: blueviolet;
+}
+.card div{
+    margin: 5px 0;
+}
+.card .title{
+    font-weight: 600;
+}
+.card .date{
+    font-size: 12px;
+    font-weight: 400;
+    color: aliceblue;
+    font-style: italic;
+}
+.card .body{
+    margin-top: 20px;
+    text-align: justify;
+}
+.card::after{
+    content: "";
+    clear: both;
+    display: table
+}
+
+/* Backdrop styling */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+/* Dialog box */
+dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border: none;
+    border-radius: 12px;
+    padding: 20px 24px;
+    width: 90%;
+    max-width: 400px;
+    height: fit-content;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    background-color: blueviolet;
+    z-index: 9999;
+}
+
+dialog h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Input groups */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    resize: none;
+    background: #b16af3;
+    color: #fff;
+}
+.input-group ::placeholder{
+    background: inherit;
+    color: #fff;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: #e1d0f3;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+/* Action buttons */
+.action {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.action button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.action button:first-child {
+    background: #ccc;
+}
+
+.action button:last-child {
+    background: #007bff;
+}
+
+.action button:first-child:hover {
+    background: #bbb;
+}
+
+.action button:last-child:hover {
+    background: #0056b3;
+}
+
+
+
+
+@media only screen and (max-width:568px) {
+    main .menu, main .content{
+        width: 100%;
+    }
+    .menu{
+        display: flex;
+        overflow: auto;
+    }
+    .menu .list-item{
+        width: 150px;
+    }
+    .menu .list-item:first-child{
+        margin-right: 10px;
+    }
+}

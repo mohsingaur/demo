@@ -1,0 +1,8 @@
+<div class="card">
+    <div class="title">{{task.title}}</div>
+    <div class="date">Posted on: {{task.createdOn | date:'fullDate'}}</div>
+    <div class="body">{{task.body}}</div>
+    <div class="action">
+        <button (click)="taskDone(task.id)" class="btn flt-rt">Remove</button>
+    </div>
+</div>

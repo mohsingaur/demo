@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+<main>
+  <div class="menu">
+    @for (user of users; track user.id){
+    <!-- <app-user [id]="user.id" [name]="user.name" [avatar]="user.avatar" (select)="selectedUser($event)"></app-user> -->
+    <app-user [selected]="selectedUserId == user.id" [user]="user" (select)="selectUser($event)"></app-user>
+    }
+  </div>
+
+  <div class="content">
+    @if (selectedUser){
+    <app-tasks [userId]="selectedUser.id" [name]="selectedUser.name"></app-tasks>
+    } 
+  </div>
+
+</main>

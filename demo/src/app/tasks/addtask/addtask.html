@@ -1,0 +1,23 @@
+<div class="backdrop" >
+    <dialog open>
+        <h2>Add New Fact</h2>
+        <form novalidate>
+            <div class="input-group">
+                <label for="">Title</label>
+                <input type="text" name="title" id="" placeholder="Fact Title" [(ngModel)]="title">
+            </div>
+            <div class="input-group">
+                <label for="">Fact</label>
+                <textarea name="fact" placeholder="Fact goes here" [(ngModel)]="fact"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="">Date</label>
+                <input type="date" name="date" id="" placeholder="Posted On" [(ngModel)]="date">
+            </div>
+            <div class="action">
+                <button type="button" (click)="close()">Cancel</button>
+                <button type="button" (click)="save()">Save</button>
+            </div>
+        </form>
+    </dialog>
+</div>
