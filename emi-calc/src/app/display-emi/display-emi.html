@@ -1,0 +1,40 @@
+@if (!results){
+<div class="content">
+    <h4>Click calculate to view the payment schedule</h4>
+</div>
+}
+@else {
+<div class="content">
+    <table>
+        <thead>
+            <tr>
+                <th>S No</th>
+                <th>Due Date</th>
+                <th>Prinical</th>
+                <th>Interest</th>
+                <th>EMI</th>
+                <th>Balance</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(emi of results; track emi.month){
+            <tr>
+                <td>{{emi.month+1}}</td>
+                <td>{{emi.dueDate | date:'yyyy-MM-dd'}}</td>
+                <td>{{emi.principal | currency:'INR'}}</td>
+                <td>{{emi.interest | currency:'INR'}}</td>
+                <td>{{emi.emi | currency:'INR'}}</td>
+                <td>{{emi.pos | currency:'INR'}}</td>
+            </tr>
+            }
+            <tr>
+                <td colspan="2">Total</td>
+                <td>{{results[results.length-1].totalPrincipalAmount | currency: 'INR'}}</td>
+                <td>{{results[results.length-1].totalInterestAmount | currency: 'INR'}}</td>
+                <td>{{results[results.length-1].totalPayableAmount | currency: 'INR'}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+}

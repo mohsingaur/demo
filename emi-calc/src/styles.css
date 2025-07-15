@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 3px;
+    height: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    background-color: black;
+}
+main{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+main .content{
+    border-radius: 10px;
+    background: #94C9A9;
+    margin: 10px auto;
+    padding: 10px;
+    max-height: 400px;
+    overflow: auto;
+}
+.content .header{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+}
+.content .body{
+    display: block;
+    padding: 10px;
+}
+.content .action{
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+.content .body .input-group{
+    width: 100%;
+    float: left;
+    margin:  10px 0;
+}
+.content .body .input-group .input{
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+}
+.content .body .input-group .input input,label{
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+}
+.content .body .input-group .input input{
+    outline:none;
+    padding: 5px;
+    background: #C9E4D4;
+    border: none;
+    border-radius: 5px;
+
+}
+.content .body .action button{
+    padding: 5px 8px;
+    background-color: #376D4C;
+    color: #fff;
+    outline:none;
+    border-radius: 5px;
+    border: 1px solid;
+    font-weight: 600;
+}
+
+.content table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content table thead{
+    position: sticky;
+}
+
+.content table tbody tr:nth-child(even){
+    background-color: #82b496;
+}
+.content table tbody tr td{
+    padding: 5px;
+}
+
+@media screen and (max-width: 568px){
+    main{
+       width: 95%;
+    }
+}

@@ -1,0 +1,38 @@
+<div class="content">
+    <div class="header">
+        <h2>EMI Calculator</h2>
+    </div>
+    <div class="body">
+        <form>
+            <div class="input-group">
+                <div class="input">
+                    <label for="principal">Principal Amount</label>
+                    <input type="text" name="principal" id="principal" placeholder="Principal Amount"
+                        [(ngModel)]="principal">
+                </div>
+                <div class="input">
+                    <label for="tenure">Tenure (In years)</label>
+                    <input type="text" name="tenure" id="tenure" placeholder="Loan Tenure in Years"
+                        [(ngModel)]="tenure">
+                </div>
+
+
+            </div>
+            <div class="input-group">
+                <div class="input">
+                    <label for="roi">Rate of Interest</label>
+                    <input type="text" name="roi" id="roi" placeholder="Annual Rate of Interest" [(ngModel)]="roi">
+                </div>
+                <div class="input">
+                    <label for="startDate">EMI Start Date</label>
+                    <input type="date" name="startDate" id="startDate"
+                        placeholder="EMI Start date/ Loan disburse Amount" [(ngModel)]="startDate">
+                </div>
+
+            </div>
+            <div class="action">
+                <button type="button" (click)="calculate()">Calculate EMI</button>
+            </div>
+        </form>
+    </div>
+</div>
