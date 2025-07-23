@@ -1,0 +1,17 @@
+@if(!blogsData){
+<h2>No Blogs available</h2>
+}
+@else{
+@for(blog of blogsData; track blog.blogId){
+<div class="blog-card">
+  <div class="blog-image">
+    <img [src]="blog.image" [alt]="blog.imageTitle" class="blog-image">
+  </div>
+  <div class="blog-content">
+    <h2 class="blog-title">{{blog.title}}</h2>
+    <p class="blog-description">{{blog.content}} </p>
+    <a href="#" class="read-more" (click)="readBlog(blog)">Read More →</a>
+  </div>
+</div>
+}
+}

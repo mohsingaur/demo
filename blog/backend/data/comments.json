@@ -1,0 +1,49 @@
+[
+  {
+    "commentId": 1,
+    "postId": 1,
+    "userId": 1,
+    "text": "Comment goes here",
+    "dateCreated": "2025-07-20T10:35:31.955Z"
+  },
+  {
+    "commentId": 2,
+    "postId": 1,
+    "userId": 2,
+    "text": "Comment goes here",
+    "dateCreated": "2025-07-20T10:35:31.955Z"
+  },
+  {
+    "commentId": 3,
+    "postId": 2,
+    "userId": 2,
+    "text": "Comment goes here",
+    "dateCreated": "2025-07-20T10:35:31.955Z"
+  },
+  {
+    "commentId": 4,
+    "postId": 1,
+    "userId": 1,
+    "text": "Comment goes here",
+    "dateCreated": "2025-07-20T10:35:31.955Z"
+  },
+  {
+    "commentId": 5,
+    "postId": 1,
+    "userId": 2,
+    "text": "Comment on post 1",
+    "dateCreated": "2025-07-20T12:09:26.481Z"
+  },
+  {
+    "commentId": 6,
+    "postId": 1,
+    "userId": 2,
+    "text": "Comment on post 1 by user 2",
+    "dateCreated": "2025-07-20T12:09:45.609Z"
+  },
+  {
+    "commentId": 7,
+    "userId": 1,
+    "dateCreated": "2025-07-20T12:10:16.714Z"
+  }
+]
