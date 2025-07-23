@@ -1,0 +1,23 @@
+@if(showBlogForm){
+<app-add-blog (closeEvent)="closeDialog($event)" (dataEvent)="addBlog($event)"></app-add-blog>
+}
+
+@if(isBlog){
+<app-blog></app-blog>
+}
+
+@else{
+<section>
+    <button (click)="openBlogDialog()">Add new blog</button>
+</section>
+<main>
+    <div class="all-blogs">
+        <h2>All Blogs</h2>
+        <app-blog-cards [blogsData]="blogs"></app-blog-cards>
+    </div>
+    <div class="featured-blogs">
+        <h2>Featured blogs</h2>
+        <app-featured-blogs [featureBlogs]="featuredBlogs"></app-featured-blogs>
+    </div>
+</main>
+}

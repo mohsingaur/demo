@@ -1,0 +1,66 @@
+[
+  {
+    "postId": 1,
+    "userId": 1,
+    "title": "A new blog created by user 1",
+    "content": "Some content goes here",
+    "tags": [
+      "Cool",
+      "stuff",
+      "blogs"
+    ],
+    "status": "published",
+    "likes": 0,
+    "comments": [],
+    "dateCreated": "2025-07-20T12:10:55.475Z",
+    "lastModified": "2025-07-20T12:10:55.475Z"
+  },
+  {
+    "postId": 2,
+    "userId": 1,
+    "title": "A new blog created by user 1",
+    "content": "Some content goes here",
+    "tags": [
+      "Cool",
+      "stuff",
+      "blogs"
+    ],
+    "status": "published",
+    "likes": 0,
+    "comments": [],
+    "dateCreated": "2025-07-20T12:11:19.145Z",
+    "lastModified": "2025-07-20T12:11:19.145Z"
+  },
+  {
+    "postId": 3,
+    "userId": 1,
+    "title": "A new blog created by user 1",
+    "content": "Some content goes here",
+    "tags": [
+      "Cool",
+      "stuff",
+      "blogs"
+    ],
+    "status": "published",
+    "likes": 0,
+    "comments": [],
+    "dateCreated": "2025-07-20T12:13:21.225Z",
+    "lastModified": "2025-07-20T12:13:21.225Z"
+  },
+  {
+    "postId": 4,
+    "userId": 2,
+    "title": "A new blog created by user 2",
+    "content": "Some content goes here",
+    "tags": [
+      "Cool",
+      "stuff",
+      "blogs"
+    ],
+    "status": "published",
+    "likes": 0,
+    "comments": [],
+    "dateCreated": "2025-07-20T12:13:53.826Z",
+    "lastModified": "2025-07-20T12:13:53.826Z"
+  }
+]

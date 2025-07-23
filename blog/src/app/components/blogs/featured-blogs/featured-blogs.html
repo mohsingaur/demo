@@ -1,0 +1,14 @@
+@for(blog of featureBlogs; track blog.blogId){
+<div class="featured-card">
+<h4>{{blog.title}}</h4>
+<p>{{blog.content}}</p>
+<a class="read-more" href="#">Read More →</a>
+</div>
+}
+
+@if(featureBlogs && featureBlogs.length<=0){
+  <div class="featured-card">
+     No Featured blogs available
+  </div>
+ 
+}

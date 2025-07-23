@@ -1,0 +1,11 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <input type="text" name="username" placeholder="username" ngModel required email #username="ngModel"><br/>
+    <input type="password" name="password" placeholder="password" ngModel required minlength="6" #password="ngModel"><br/>
+    @if(username.dirty && !username.value){
+        <div>Username required</div>
+    }
+    @if(password.dirty && !password.value){
+        <div>Username required</div>
+    }
+    <button type="submit" [disabled]="form.invalid">Login</button>
+</form>
